@@ -10,10 +10,10 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQL122Dialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
   jmx:
     enable: false
   datasource:
     url: jdbc:postgresql://localhost:5432/devdojo?allowPublicKeyRetrieval=true&sslMode=DISABLED
     username: postgres
-    password: devdojo
+    password: root

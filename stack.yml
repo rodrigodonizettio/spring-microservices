@@ -2,15 +2,33 @@ version: '3.1'
 
 services:
 
-  db:
+  postgres-compose:
     image: postgres
     ports:
       - 5432:5432
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: donizetti
+      POSTGRES_PASSWORD: root
     volumes:
       - microservices:/var/lib/postgres
+    networks:
+      - postgres-compose-network
+
+  pgadmin-compose:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "rodrigodonizettio@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "root"
+    ports:
+      - 6543:80
+    depends_on:
+      - postgres-compose
+    networks:
+      - postgres-compose-network
+
+networks:
+  postgres-compose-network:
+    driver: bridge
 
 volumes:
   microservices:

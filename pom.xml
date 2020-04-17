@@ -8,17 +8,25 @@
 		<version>2.2.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.rdoliveira</groupId>
-	<artifactId>course</artifactId>
+	<artifactId>DevDojo-Microservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>course</name>
-	<description>DevDojo Microservice Course</description>
+	<packaging>pom</packaging>
 
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 
+	<modules>
+		<module>course</module>
+	</modules>
+
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -66,14 +74,4 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
 </project>

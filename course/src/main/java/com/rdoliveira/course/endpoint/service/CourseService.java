@@ -1,7 +1,7 @@
-package com.rdoliveira.course.controller.service;
+package com.rdoliveira.course.endpoint.service;
 
-import com.rdoliveira.course.model.Course;
-import com.rdoliveira.course.repository.CourseRepository;
+import com.rdoliveira.core.model.Course;
+import com.rdoliveira.core.repository.CourseRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

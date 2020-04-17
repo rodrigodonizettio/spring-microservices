@@ -14,12 +14,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<properties>
-		<java.version>11</java.version>
-	</properties>
-
 	<modules>
 		<module>course</module>
+		<module>core</module>
 	</modules>
 
 	<dependencies>

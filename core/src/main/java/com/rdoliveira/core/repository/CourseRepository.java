@@ -1,6 +1,6 @@
-package com.rdoliveira.course.repository;
+package com.rdoliveira.core.repository;
 
-import com.rdoliveira.course.model.Course;
+import com.rdoliveira.core.model.Course;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 /**

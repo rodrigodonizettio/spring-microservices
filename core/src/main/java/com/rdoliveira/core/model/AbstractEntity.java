@@ -1,4 +1,4 @@
-package com.rdoliveira.course.model;
+package com.rdoliveira.core.model;
 
 import java.io.Serializable;
 

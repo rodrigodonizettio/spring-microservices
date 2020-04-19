@@ -7,10 +7,11 @@ services:
     ports:
       - 5432:5432
     environment:
+      POSTGRES_DB: devdojo
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: root
     volumes:
-      - microservices:/var/lib/postgres
+      - postgres_data:/var/lib/postgres
     networks:
       - postgres-compose-network
 
@@ -31,4 +32,4 @@ networks:
     driver: bridge
 
 volumes:
-  microservices:
+  postgres_data:

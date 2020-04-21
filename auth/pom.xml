@@ -16,9 +16,15 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<rdoliveira-core.version>0.0.1-SNAPSHOT</rdoliveira-core.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.rdoliveira</groupId>
+			<artifactId>core</artifactId>
+			<version>${rdoliveira-core.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>

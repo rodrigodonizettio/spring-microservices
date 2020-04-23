@@ -17,9 +17,15 @@
 	<properties>
 		<java.version>11</java.version>
 		<rdoliveira-core.version>0.0.1-SNAPSHOT</rdoliveira-core.version>
+		<rdoliveira-token.version>0.0.1-SNAPSHOT</rdoliveira-token.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.rdoliveira</groupId>
+			<artifactId>token</artifactId>
+			<version>${rdoliveira-token.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>com.rdoliveira</groupId>
 			<artifactId>core</artifactId>

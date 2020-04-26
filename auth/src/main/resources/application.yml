@@ -25,3 +25,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/devdojo?allowPublicKeyRetrieval=true&sslMode=DISABLED
     username: postgres
     password: root
+
+jwt:
+  config:
+    type: signed

@@ -25,3 +25,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/devdojo?allowPublicKeyRetrieval=true&sslMode=DISABLED
     username: postgres
     password: root
+
+jwt:
+  config:
+    type: signed #only need signed Token (saves internal processing). To increase security (encrypted + signed) remove this line.

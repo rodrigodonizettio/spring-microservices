@@ -10,10 +10,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableConfigurationProperties(value = JwtConfiguration.class)
 @EntityScan({"com.rdoliveira.core.model"})
 @EnableJpaRepositories({"com.rdoliveira.core.repository"})
 @EnableEurekaClient
+@EnableConfigurationProperties(value = JwtConfiguration.class)
 @ComponentScan("com.rdoliveira")
 public class AuthApplication {
 
@@ -22,3 +22,4 @@ public class AuthApplication {
 	}
 
 }
+
